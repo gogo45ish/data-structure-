@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.*;
 
-public class LinearSearch {
+public class BinarySearch {
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<>();
 		int arraySize = 1000;
@@ -15,7 +15,7 @@ public class LinearSearch {
 		Integer[] a = new Integer[arraySize];
 		list.toArray(a); // creates an array with size “arraySize”
 
-		LinearSearch ls = new LinearSearch();\
+		BinarySearch ls = new BinarySearch();
 		int low = 0;
 		int high = a.length - 1;
 		
@@ -38,7 +38,7 @@ public class LinearSearch {
 			return findBS(data,key,mid+1,high);
 					}
 		else {
-			findBS(data,key,low,mid-1);
+			return findBS(data,key,low,mid-1);
 		}
 		
 	}
